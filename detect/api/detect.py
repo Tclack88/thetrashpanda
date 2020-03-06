@@ -27,15 +27,10 @@ csv_path = "detect/api/materials.csv"
 df_mat = pd.read_csv(csv_path)
 
 
-# === YOLO config variables === #
-# Paths to necessary files
+# === YOLO configuration === #
 yolo_path = "detect/api/yolo_config"
-weights_path = os.path.join(yolo_path, "yolo-obj_13000.weights")
+weights_path = os.path.join(yolo_path, "yolo-obj_14000.weights")
 config_path = os.path.join(yolo_path, "yolo-obj.cfg")
-classes_path = os.path.join(yolo_path, "classes.txt")
-# Config vars
-conf_thresh = 0.2  # Confidence threshold
-nms_thresh = 0.1  # Non-maximum suppression
 
 # === Instantiate network === #
 net = load_model(config_path, weights_path)
@@ -43,6 +38,7 @@ net = load_model(config_path, weights_path)
 # === Format for marshaled response objects === #
 # These dictionaries act as templates for response objects
 # and can validate the response if needed.
+
 # Format/validate the data model as json
 material = {
     "material_id": fields.Integer(),
@@ -87,6 +83,8 @@ def snake_to_cd_case(name: str):
 
 
 class Ping(Resource):
+    """Endpoint to test that the app is working."""
+
     def get(self):
         return {
             "status": "success",
@@ -97,11 +95,13 @@ class Ping(Resource):
 class Detect(Resource):
     @api.marshal_with(resource_fields)
     def post(self):
+        # Get and parse the json post request
         post_data = request.get_json()
         img_b64 = post_data.get("imgb64")
         response_object = {}
 
         # Convert to imageio (numpy) array
+        # Catch some errors, mostly with input string
         try:
             img = from_base64(img_b64)
         except AttributeError:
@@ -126,13 +126,14 @@ class Detect(Resource):
             # Get list of materials for the predicted cluster
             materials = df_mat[df_mat["cluster"] == prediction]
 
-            # response_object["materials"] = [row.material_id for row in materials]
             response_object["materials"] = materials["material_id"].tolist()
             response_object["message"] = "success"
             return response_object, 200
 
         else:  # No prediction was made
             response_object["message"] = "No object detected."
+            response_object["confidence"] = 0.0
+
             return response_object, 404
 
 
@@ -141,16 +142,14 @@ class Clusters(Resource):
     def get(self, cluster):
         # Instantiate response object
         response_object = {}
-        response_object["cluster"] = cluster
+        response_object["cluster"] = cluster  # Grab cluster from URL
 
         # Format into Title Case for display purposes
         response_object["cluster_name"] = snake_to_cd_case(cluster)
 
         # Get list of records matching the cluster name
-        # materials = Material.query.filter(Material.cluster == cluster).all()
         materials = df_mat[df_mat["cluster"] == cluster]
 
-        # response_object["materials"] = [row.material_id for row in materials]
         response_object["materials"] = materials["material_id"].tolist()
         response_object["message"] = "success"
         return response_object, 200
@@ -172,5 +171,5 @@ class ClustersList(Resource):
 
 api.add_resource(Ping, "/ping")
 api.add_resource(Detect, "/detect")
-api.add_resource(ClustersList, "/clusters")
 api.add_resource(Clusters, "/clusters/<cluster>")
+api.add_resource(ClustersList, "/clusters")

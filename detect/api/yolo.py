@@ -12,15 +12,10 @@ import cv2
 # === YOLO config variables === #
 # Paths to necessary files
 yolo_path = "detect/api/yolo_config"
-weights_path = os.path.join(yolo_path, "yolo-obj_13000.weights")
-config_path = os.path.join(yolo_path, "yolo-obj.cfg")
 classes_path = os.path.join(yolo_path, "classes.txt")
 # Config vars
 conf_thresh = 0.2  # Confidence threshold
 nms_thresh = 0.1  # Non-maximum suppression
-input_height = 416  # Height of network's input image
-input_width = 416  # Width of network's input image
-input_dim = (input_height, input_width)
 
 # === YOLO utility functions === #
 
@@ -128,5 +123,5 @@ def get_prediction(image, net, img_dim: tuple = (416, 416)):
             pred_time,
         )
     else:
-        return None, None, None
+        return None, None, pred_time
 

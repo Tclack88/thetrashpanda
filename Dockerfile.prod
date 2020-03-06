@@ -40,4 +40,5 @@ USER tpds
 COPY . /usr/src/app
 
 # Run the gunicorn server
+# The $PORT environment variable is used by Heroku
 CMD gunicorn --bind 0.0.0.0:$PORT manage:app

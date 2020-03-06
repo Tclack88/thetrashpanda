@@ -12,33 +12,23 @@ RUN apt-get update && \
     apt-get install -y libjpeg-dev zlib1g-dev && \
     apt-get clean
 
-# Create + set working directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-
 # Set envirovars
 # Prevent pyc files
 ENV PYTHONDONTWRITEBYTECODE 1
 # Prevents buffering stdout and sdterr
 ENV PYTHONUNBUFFERED 1
-ENV FLASK_ENV production
-ENV APP_SETTINGS detect.config.ProductionConfig
 
-# Add and run as non-root user
-RUN addgroup --system tpds && adduser --system --no-create-home --group tpds
-RUN chown -R tpds:tpds /usr/src/app && chmod -R 755 /usr/src/app
+# Create + set working directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
 # Add and install dependencies
 RUN pip install --upgrade pip
 COPY ./requirements.txt /usr/src/app/requirements.txt
 RUN pip install -r requirements.txt
 
-# Switch to non-root user
-USER tpds
-
 # Add app
 COPY . /usr/src/app
 
-# Run the gunicorn server
-EXPOSE 5000
-CMD gunicorn --bind 0.0.0.0:5000 manage:app
+# Run the Flask dev server
+CMD python manage.py run -h 0.0.0.0

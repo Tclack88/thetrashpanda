@@ -3,3 +3,10 @@ env
 Dockerfile
 Dockerfile.prod
 assets_/
+Pipfile
+Pipfile.lock
+LICENSE
+README.md# Elastic Beanstalk Files
+.elasticbeanstalk/*
+.git
+.gitignore
