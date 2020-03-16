@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 version: "2"
 exclude_patterns:
   - "**/__tests__/"
+=======
+exclude_patterns:
+    - "tests/"
+    - "spec/"
+    - "**/vendor/"
+    - "**/node_modules/"
+>>>>>>> tmptmp_NLSKMYR439/master
