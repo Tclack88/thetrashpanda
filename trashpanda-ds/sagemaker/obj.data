@@ -1,0 +1,9 @@
+classes= 75
+
+train = train.txt
+
+valid = test.txt
+
+names = data/obj.names
+
+backup = /home/ec2-user/SageMaker/trashpanda-ds/sagemaker/backup/
