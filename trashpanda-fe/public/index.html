@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <title>Trash Panda</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png?v=PYqlOBb5Yz"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png?v=PYqlOBb5Yz"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png?v=PYqlOBb5Yz"
+    />
+    <link rel="shortcut icon" href="./favicon.ico?v=PYqlOBb5Yz" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QXB3ZDNTWZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QXB3ZDNTWZ");
+    </script>
+    <script>
+      window["_fs_debug"] = false;
+      window["_fs_host"] = "fullstory.com";
+      window["_fs_script"] = "edge.fullstory.com/s/fs.js";
+      window["_fs_org"] = "SDNJQ";
+      window["_fs_namespace"] = "FS";
+      (function(m, n, e, t, l, o, g, y) {
+        if (e in m) {
+          if (m.console && m.console.log) {
+            m.console.log(
+              'FullStory namespace conflict. Please set window["_fs_namespace"].'
+            );
+          }
+          return;
+        }
+        g = m[e] = function(a, b, s) {
+          g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.crossOrigin = "anonymous";
+        o.src = "https://" + _fs_script;
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function(i, v, s) {
+          g(l, { uid: i }, s);
+          if (v) g(l, v, s);
+        };
+        g.setUserVars = function(v, s) {
+          g(l, v, s);
+        };
+        g.event = function(i, v, s) {
+          g("event", { n: i, p: v }, s);
+        };
+        g.shutdown = function() {
+          g("rec", !1);
+        };
+        g.restart = function() {
+          g("rec", !0);
+        };
+        g.log = function(a, b) {
+          g("log", [a, b]);
+        };
+        g.consent = function(a) {
+          g("consent", !arguments.length || a);
+        };
+        g.identifyAccount = function(i, v) {
+          o = "account";
+          v = v || {};
+          v.acctId = i;
+          g(o, v);
+        };
+        g.clearUserCookie = function() {};
+        g._w = {};
+        y = "XMLHttpRequest";
+        g._w[y] = m[y];
+        y = "fetch";
+        g._w[y] = m[y];
+        if (m[y])
+          m[y] = function() {
+            return g._w[y].apply(this, arguments);
+          };
+        g._v = "1.1.1";
+      })(window, document, window["_fs_namespace"], "script", "user");
+    </script>
+  </head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <script type="text/javascript" src="../src/index.js"></script>
+    <script type="module">
+      import { Workbox } from "https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-window.prod.mjs";
+
+      if ("serviceWorker" in navigator) {
+        const wb = new Workbox("/sw.js");
+
+        // Add an event listener to detect when the registered
+        // service worker has installed but is waiting to activate.
+        wb.addEventListener("waiting", event => {
+          // set up a listener that will reload the page as soon as the
+          //previously waiting service worker has taken control.
+          wb.addEventListener("controlling", event => {
+            window.location.reload();
+          });
+
+          // Send a message telling the service worker to skip waiting.
+          // This will trigger the `controlling` event handler above.
+          // Note: for this to work, you have to add a message
+          // listener in your service worker. See below.
+          wb.messageSW({ type: "SKIP_WAITING" });
+        });
+
+        wb.register();
+      }
+    </script>
+  </body>
+</html>
