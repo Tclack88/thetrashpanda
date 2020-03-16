@@ -1,5 +1,6 @@
 # ====== Project-Specific ====== #
 
+<<<<<<< HEAD
 # Detectron2 should be cloned and built manually
 detectron2/
 
@@ -7,6 +8,17 @@ detectron2/
 *.h5
 *.pkl
 
+=======
+# === Model weights files === #
+*.weights
+*.h5
+*.pkl
+
+# === Private dirs === #
+# To make a directory private, add an underscore to the end of its name
+*_/ 
+
+>>>>>>> tmptmp_SUnwBXRfD3/master
 # Misc
 node_modules/
 
@@ -31,7 +43,11 @@ node_modules/
 *.zip
 
 # Databases
+<<<<<<< HEAD
 *.sql
+=======
+# *.sql
+>>>>>>> tmptmp_SUnwBXRfD3/master
 *.sqlite
 
 # Created by https://www.gitignore.io/api/osx,python,visualstudiocode
@@ -199,3 +215,11 @@ dmypy.json
 .history
 
 # End of https://www.gitignore.io/api/osx,python,visualstudiocode
+<<<<<<< HEAD
+=======
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+>>>>>>> tmptmp_SUnwBXRfD3/master

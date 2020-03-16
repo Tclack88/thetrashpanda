@@ -1,0 +1,377 @@
+material_id,material,cluster
+3,Antifreeze,hazardous_fluid
+219,Auto Bodies,vehicles
+275,Auto Parts,auto_parts
+525,Bike Tires,tires
+108,Brake Fluid,hazardous_fluid
+4,Car Batteries,batteries
+368,Car Fluids,hazardous_fluid
+186,Engine Degreasers,hazardous_fluid
+597,Gas/Oil Mixture,hazardous_fluid
+188,Gasoline,hazardous_fluid
+535,Hydraulic Fluid,hazardous_fluid
+95,Innertubes,tires
+326,Marine Batteries,batteries
+1,Motor Oil,hazardous_fluid
+260,Motor Oil Containers,hazardous_fluid
+2,Oil Filters,auto_parts
+543,Power Steering Fluid,hazardous_fluid
+605,Radiators,auto_parts
+369,Road Flares,auto_parts
+5,Tires,tires
+107,Transmission Fluid,hazardous_fluid
+633,Truck Tires,tires
+267,Vehicles,vehicles
+104,Alkaline Batteries,batteries
+127,Button Cell Batteries,batteries
+370,Lead-acid Batteries - Non-automotive,batteries
+689,Lithium Batteries,batteries
+6,Lithium-ion Batteries,batteries
+126,Nickel-cadmium Batteries,batteries
+685,Nickel-metal Hydride Batteries,batteries
+687,Nickel-zinc Batteries,batteries
+547,Silver-oxide Batteries,batteries
+710,Zinc-air Batteries,batteries
+691,Zinc-carbon Batteries,batteries
+212,Asphalt,none
+210,Brick,none
+217,Carpet,none
+118,Carpet Padding,none
+244,Ceiling Tiles,none
+215,Ceramic Tile,none
+203,Concrete,none
+385,Construction Debris,none
+132,Construction Materials,none
+378,Contaminated Soil,none
+379,Contaminated Wood,none
+207,Dirt,none
+380,Doors,doors
+208,Gypsum Drywall,none
+382,Hardware,hardware
+228,Household Furniture,furniture
+381,Light Fixtures,home_electronics
+391,Lighting Ballasts,home_electronics
+216,Linoleum,none
+346,Lumber,wood
+226,Mattresses,furniture
+392,Neon Lights,lightbulb
+271,Office Furniture,furniture
+205,Pallets,wood
+214,Porcelain Products,none
+257,Roofing Materials,none
+386,Sand,none
+258,Sawdust,green_waste
+213,Shingles,none
+211,Stone,none
+387,Tile,none
+224,Tools,tools
+218,Windows,glass
+204,Wood,wood
+206,Wood Furnishings,furniture
+485,Audio Equipment,home_electronics
+647,Blu-Ray Players,home_electronics
+643,Boomboxes,home_electronics
+481,Cables,cables
+585,Calculators,home_electronics
+651,Cassette Players,home_electronics
+398,Cassette Tapes,cassette
+641,CD Players,home_electronics
+147,CDs,disks
+482,Cell Phone Accessories,home_electronics
+245,Cell Phones,mobile_device
+483,Computer Peripherals - External,desktop_computers
+615,Computer Peripherals - Internal,electronic_waste
+486,CRT Computer Monitors,monitors
+487,CRT Televisions,monitors
+661,Curling Irons,home_electronics
+697,Dehumidifiers,home_electronics
+85,Desktop Computers,desktop_computers
+488,Digital Cameras,digital_cameras
+81,Dishwashers,large_appliance
+645,DVD Players,home_electronics
+637,DVDs,disks
+340,Electronic Servers,desktop_computers
+712,Electronic Waste,electronic_waste
+711,E-Waste,electronic_waste
+222,Floppy Disks,floppy_disks
+332,Game Consoles,game_consoles
+489,GPS Systems,mobile_device
+581,Hard Drives,home_electronics
+490,Home Electronics,home_electronics
+707,Hoverboards,home_electronics
+695,Humidifiers,home_electronics
+247,Inkjet Cartridges,cartridge
+491,Laptop Computers,laptop_computers
+254,Lawnmowers,none
+259,LCD Computer Monitors,monitors
+229,LCD Televisions,monitors
+533,Medical Equipment - Handheld,mobile_device
+252,Medical Equipment - Large,large_appliance
+493,Microwaves,small_appliances
+357,MP3 Players,mobile_device
+272,Office Machines,printers
+659,Pagers,mobile_device
+494,Paper Shredders,home_electronics
+577,Power Tools,power_tools
+495,Printers,printers
+653,Projectors,home_electronics
+496,Receivers,home_electronics
+649,Record Players,home_electronics
+706,Satellite Dish,none
+545,Scanners,printers
+362,Small Appliances,small_appliances
+609,Stoves,large_appliance
+497,Tablets,mobile_device
+246,Telephones,home_electronics
+484,Television Accessories,home_electronics
+549,Toasters,small_appliances
+79,Toner Cartridges,cartridge
+498,Two-Way Radios,home_electronics
+611,Typewriters,home_electronics
+499,Vacuum Cleaners,home_electronics
+492,VCRs,home_electronics
+675,Video Game Cartridges,cartridge
+673,Video Game Peripherals,home_electronics
+223,Video Tapes,cassette
+399,Vinyl Records,disks
+231,Branches,green_waste
+232,Brush,none
+100,Christmas Trees,green_waste
+233,Grass Clippings,green_waste
+348,Hay,green_waste
+617,Holiday Greens,green_waste
+230,Leaves,green_waste
+349,Manure,green_waste
+623,Non-Organic Food Waste,food_waste
+98,Organic Food Waste,food_waste
+571,Stumps,green_waste
+234,Weeds,green_waste
+352,Wood Chips,green_waste
+78,Yard Waste,green_waste
+255,Blue Glass Beverage Containers,glass
+430,Blue Glass Containers,glass
+76,Brown Glass Beverage Containers,glass
+431,Brown Glass Containers,glass
+77,Clear Glass Beverage Containers,glass
+432,Clear Glass Containers,glass
+102,Green Glass Beverage Containers,glass
+433,Green Glass Containers,glass
+256,Treated Glass Containers,glass
+503,Acids,hazardous_fluid
+187,Adhesives,hazardous_fluid
+521,Aerosol Cans - Full,aerosol_cans
+121,Aerosol Cans - Empty,aerosol_cans
+591,Air Conditioners,none
+194,Ammunition,ammunition
+196,Asbestos,none
+333,CFLs,lightbulb
+364,Chemistry Sets,glass
+527,Controlled Substances,medications
+130,Cooking Oil,cooking_oil
+702,Exit Signs,home_electronics
+195,Explosives,none
+183,Fertilizers,hazardous_fluid
+253,Fire Extinguishers,fire_extinguishers
+116,Fluorescent Tubes,lightbulb
+529,Freezers,large_appliance
+182,Fungicides,hazardous_fluid
+395,Gas Cylinders,none
+372,Hair Dye,hazardous_fluid
+373,Hair Spray,aerosol_cans
+181,Herbicides,hazardous_fluid
+306,HHW,hazardous_fluid
+184,Household Cleaners,hazardous_fluid
+180,Insecticides,hazardous_fluid
+192,Items Containing Mercury,none
+515,Kerosene,hazardous_fluid
+403,Lacquer,hazardous_fluid
+418,Latex Paint,paint
+384,Lead Paint Chips,none
+374,Lice Shampoo,hazardous_fluid
+517,Lighter Fluid,hazardous_fluid
+8,Medical Sharps,none
+193,Medications,medications
+334,Mercury Thermostats,none
+376,Nail Polish,nail_polish
+603,Nail Polish Removers,hazardous_fluid
+404,Oil-Based Paint,paint
+405,Paint Strippers,hazardous_fluid
+191,Paint Thinners,hazardous_fluid
+665,Perfumes,none
+179,Pesticides,hazardous_fluid
+190,Photographic Chemicals,hazardous_fluid
+189,Pool Chemicals,hazardous_fluid
+145,Propane Tanks,propane_tanks
+553,Refrigerators,large_appliance
+565,Sealers,hazardous_fluid
+197,Smoke Detectors,smoke_detectors
+185,Solvents,hazardous_fluid
+408,Varnish,hazardous_fluid
+407,Wood Stains,hazardous_fluid
+146,X-rays,none
+353,Adult Toys,none
+363,Arts and Crafts Supplies,office_supplies
+422,Baby Products,none
+505,Barbeque Grills,large_appliance
+134,Bicycles,bicycles
+563,Candy Wrappers,wrapper
+507,CD Cases,cd_cases
+583,Chip Bags,wrapper
+693,Cigarettes,cigarettes
+83,Clothing,fabrics
+388,Cookware,cookware
+389,Corks,corks
+359,Crayons,crayons
+631,Drink Pouches,none
+101,Eyeglasses,eyeglasses
+371,Fabric,fabrics
+569,Flip-Flops,shoes
+557,Garden Tools,none
+343,Gift Bags,gift_bags
+589,Glue Sticks,office_supplies
+419,Hair,none
+373,Hair Spray,hazardous_fluid
+511,Halogen Bulbs,lightbulb
+513,Heaters,heaters
+599,Incandescent Lightbulbs,lightbulb
+709,Latex Foam Pillows,none
+375,Linens,fabrics
+226,Mattresses,none
+97,Metal Clothes Hangers,scrap_metal
+221,Musical Instruments - Metal,musical_instruments
+575,Musical Instruments - Non-metal,musical_instruments
+704,Nylon Flag,fabrics
+273,Office Supplies,office_supplies
+342,Ornaments,glass
+0,None,pet_waste
+531,Pizza Boxes,pizza_boxes
+593,Plastic Buckets,plastic_containers
+537,Plastic Furniture,furniture
+500,Plastic Plant Materials,none
+523,Plastic Playsets,furniture
+377,Shoes,shoes
+80,Sporting Goods,sporting_goods
+341,String Lights,home_electronics
+356,Surfboards,sporting_goods
+635,Synthetic Cork,none
+358,Tennis Balls,sporting_goods
+587,Toothbrushes,toothbrushes
+629,Toothpaste Tubes,toothpaste_tubes
+220,Toys,toy
+415,Trophies,toy
+573,Washer/Dryers,large_appliance
+421,Yoga Mats,sporting_goods
+70,Aluminum Beverage Cans,metal_cans
+235,Aluminum Foil,aluminium_foil
+435,Aluminum Food Cans,metal_cans
+436,Aluminum Pie Plates,aluminium_foil
+437,Aluminum Trays,aluminium_foil
+434,Aluminum Lids,metal_cans
+607,Aluminum Scrap,scrap_metal
+683,Brass,scrap_metal
+595,Copper,scrap_metal
+74,Ferrous Metals,scrap_metal
+439,Metal Paint Cans,metal_cans
+440,Metal Tags,scrap_metal
+99,Nonferrous Metals,scrap_metal
+396,Pipe,scrap_metal
+397,Scrap Metal,scrap_metal
+679,Stainless Steel,scrap_metal
+73,Steel Cans,metal_cans
+438,Steel Lids,metal_cans
+681,Zinc,scrap_metal
+657,Blueprints,mixed_paper
+423,Booklets,mixed_paper
+561,Brochures,mixed_paper
+425,Cardstock,mixed_paper
+270,Catalogs,mixed_paper
+117,Chipboard,cardboard
+663,Construction Paper,mixed_paper
+40,Corrugated Cardboard,cardboard
+201,Drink Boxes,none
+509,Envelopes,mixed_paper
+345,Gift Boxes,cardboard
+627,Glassine,mixed_paper
+344,Greeting Cards,mixed_paper
+541,Hardcover Books,mixed_paper
+625,Kraft Paper,mixed_paper
+94,Magazines,mixed_paper
+669,Mail,mixed_paper
+539,Manila Folders,mixed_paper
+44,Mixed Paper,mixed_paper
+579,Multi-wall Paper Bags,mixed_paper
+39,Newspaper,mixed_paper
+667,Newspaper Inserts,mixed_paper
+58,Office Paper,mixed_paper
+96,Paper Bags,mixed_paper
+442,Paper Cups,paper_cups
+519,Paper Egg Cartons,cardboard
+443,Paper Labels,mixed_paper
+444,Paper Sleeves,mixed_paper
+427,Paper Tubes,cardboard
+250,Paperback Books,mixed_paper
+42,Paperboard,cardboard
+54,Phone Books,mixed_paper
+409,Shredded Paper,mixed_paper
+410,Soiled Paper,mixed_paper
+411,Waxed Cardboard,cardboard
+441,Wet-strength Paperboard,cardboard
+559,Window Envelopes,mixed_paper
+551,Wrapping Paper,mixed_paper
+446,#1 Plastic Clamshells,plastic_clamshells
+452,#2 Plastic Clamshells,plastic_clamshells
+465,#5 Plastic Clamshells,plastic_clamshells
+472,#6 Plastic Clamshells - Expanded,plastic_clamshells
+445,#1 Plastic Bags,plastic_bags
+93,#2 Plastic Bags,plastic_bags
+456,#3 Plastic Bags,plastic_bags
+429,#4 Plastic Bags,plastic_bags
+464,#5 Plastic Bags,plastic_bags
+470,#6 Plastic Bags,plastic_bags
+477,#7 Plastic Bags,plastic_bags
+447,#1 Plastic Film,plastic_bags
+413,#2 Plastic Film,plastic_bags
+457,#3 Plastic Film,plastic_bags
+461,#4 Plastic Film,plastic_bags
+467,#5 Plastic Film,plastic_bags
+473,#6 Plastic Film,plastic_bags
+478,#7 Plastic Film,plastic_bags
+60,#1 Plastic Beverage Bottles,plastic_bottles
+449,#1 Plastic Non-Beverage Bottles,plastic_bottles
+62,#2 Plastic Jugs - Clear,plastic_bottles
+61,#2 Plastic Jugs - Colored,plastic_bottles
+455,#2 Plastic Bottles,plastic_bottles
+63,#3 Plastic Bottles,plastic_bottles
+64,#4 Plastic Bottles,plastic_bottles
+65,#5 Plastic Bottles,plastic_bottles
+66,#6 Plastic Bottles,plastic_bottles
+67,#7 Plastic Bottles,plastic_bottles
+619,#2 Plastic Caps,plastic_caps
+361,#5 Plastic Caps,plastic_caps
+466,#5 Plastic Cups,plastic_containers
+621,#6 Plastic Cups,plastic_containers
+471,#6 Plastic Cups - Expanded,plastic_containers
+448,#1 Rigid Plastics,none
+454,#2 Rigid Plastics,none
+458,#3 Rigid Plastics,none
+463,#4 Rigid Plastics,none
+468,#5 Rigid Plastics,none
+475,#6 Rigid Plastics,none
+476,#7 Rigid Plastics,none
+355,#6 Plastic - Expanded,none
+450,#1 Plastic Trays,none
+708,#4 Flexible Plastics,none
+68,#6 Plastic Peanuts,none
+414,Compostable Plastics,none
+366,Mannequins,none
+639,Medication Containers,medication_containers
+236,Milk and Juice Cartons,none
+277,Pesticide Containers,hazardous_fluid
+567,Plastic Bottle Accessories,plastic_caps
+354,Plastic Cards,plastic_cards
+655,Plastic Egg Cartons,plastic_clamshells
+699,Plastic Packing Materials,plastic_bags
+677,Plastic Paint Cans,plastic_containers
+671,Six-pack Rings,none
+402,Tyvek Envelopes,none
+412,Water Filters,water_filters
